@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Add Exercise</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><font size=70><strong>Add Exercise</strong></font></a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<form method="post" action="#">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="TitleTextBox" id="Title" value="" placeholder="Title" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<select name="CategoryDropDown" id="Category">
+													<option value="">- Category -</option>
+													<option value="2">Free Hand</option>
+													<option value="3">Equipment</option>
+													<!-- <option value="4">Cycling</option>
+													<option value="5">Weights</option> -->
+												</select>
+
+											</div>
+											<div class="col-12">
+												<textarea name="DescriptionTextArea" id="Description" placeholder="Description" rows="6"></textarea>
+											</div>
+											<div class="row gtr-uniform">
+												<div class="col-6 col-12-xsmall">
+													<input type="text" name="SubmittedByTextBox" id="SubmittedBy" value="" placeholder="Repetitions" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<input id="datepicker" width="270" />
+												</div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Confirm" class="primary" /></li>
+													<!-- <li><a href="#" class="button primary">View Notices</a></li> -->
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+
+							<!-- Footer -->
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+		<script>
+					$('#datepicker').datepicker({
+            	uiLibrary: 'bootstrap'
+        	});
+		</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
